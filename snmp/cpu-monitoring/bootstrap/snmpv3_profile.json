@@ -1,0 +1,11 @@
+
+{
+  "view_name": "MONITOR-VIEW",
+  "group_name": "MONITOR-GRP",
+  "snmp_user": "SNMPUser1",
+  "verify_cmds": [
+    "show snmp user",
+    "show snmp group",
+    "show snmp engineID"
+  ]
+}

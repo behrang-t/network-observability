@@ -1,0 +1,8 @@
+
+{
+  "username": "test",
+  "password": "test",
+  "secret": "test",
+  "snmp_auth_pass": "AUTHPass",
+  "snmp_priv_pass": "PRIVPass"
+}

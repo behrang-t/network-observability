@@ -1,0 +1,64 @@
+
+services:
+  mailpit:
+    image: axllent/mailpit:latest
+    ports:
+      - "8025:8025"   # Web UI
+      - "1025:1025"   # SMTP
+    restart: unless-stopped
+    logging:
+      driver: "journald"
+      options:
+        tag: "mailpit"
+    networks: [appnet]
+
+  poller:
+    build:
+      context: ./snmpcheck
+      dockerfile: Dockerfile
+    image: snmp-poller:0.1
+    network_mode: host
+    volumes:
+      - ./shared:/app/shared
+    environment:
+      - DEVICES_FILE=/app/shared/devices.json
+      - CSV_FILE=/app/shared/cpu.csv
+      - LATEST_DIR=/app/shared/latest
+      - INTERVAL_SEC=30
+      - CONCURRENCY_LIMIT=50
+    logging:
+      driver: "journald"
+      options:
+        tag: "snmp-poller"
+    restart: unless-stopped
+
+  alerter:
+    build:
+      context: ./alerting
+      dockerfile: Dockerfile
+    image: snmp-alerter:0.1
+    volumes:
+      - ./shared:/app/shared
+    environment:
+      - LATEST_DIR=/app/shared/latest
+      - STATE_DIR=/app/shared/state
+      - ALERTER_INTERVAL_SEC=40
+      - THRESHOLD=80
+      - COOLDOWN_SEC=3600
+      - SMTP_HOST=mailpit
+      - SMTP_PORT=1025
+      - MAIL_FROM=snmp@lab.local
+      - MAIL_TO=ops@lab.local
+      - LOG_LEVEL=INFO
+    depends_on:
+      - mailpit
+    logging:
+      driver: "journald"
+      options:
+        tag: "snmp-alerter"
+    restart: unless-stopped
+    networks: [appnet]
+
+networks:
+  appnet:
+    driver: bridge
