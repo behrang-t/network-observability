@@ -1,0 +1,5 @@
+NAME             IMAGE                    COMMAND                  SERVICE    CREATED          STATUS                    PORTS
+iosxe-grafana    grafana/grafana:11.1.0   "/run.sh"                grafana    16 minutes ago   Up 16 minutes             0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp
+iosxe-influxdb   influxdb:2.7             "/entrypoint.sh infl…"   influxdb   16 minutes ago   Up 16 minutes             0.0.0.0:8086->8086/tcp, [::]:8086->8086/tcp
+iosxe-mailpit    axllent/mailpit:latest   "/mailpit"               mailpit    16 minutes ago   Up 16 minutes (healthy)   0.0.0.0:1025->1025/tcp, [::]:1025->1025/tcp, 0.0.0.0:8025->8025/tcp, [::]:8025->8025/tcp, 1110/tcp
+iosxe-telegraf   telegraf:1.31            "/entrypoint.sh tele…"   telegraf   16 minutes ago   Up 16 minutes             

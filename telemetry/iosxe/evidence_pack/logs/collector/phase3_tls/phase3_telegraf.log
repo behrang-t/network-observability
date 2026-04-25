@@ -1,0 +1,117 @@
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Starting Telegraf 1.31.3 brought to you by InfluxData the makers of InfluxDB
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Available plugins: 234 inputs, 9 aggregators, 32 processors, 26 parsers, 60 outputs, 6 secret-stores
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Loaded inputs: cisco_telemetry_mdt
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Loaded aggregators: 
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Loaded processors: 
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Loaded secretstores: 
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Loaded outputs: influxdb_v2
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Tags enabled: 
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! [agent] Config: Interval:10s, Quiet:false, Hostname:"", Flush Interval:10s
+iosxe-telegraf  | 2026-04-23T08:38:09Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-23T09:08:09Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-23T10:17:05Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-23T11:47:07Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-23T12:57:08Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-23T14:07:05Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-23T14:07:05Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-23T14:07:09Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-24T08:08:33Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T08:08:33Z I! Starting Telegraf 1.31.3 brought to you by InfluxData the makers of InfluxDB
+iosxe-telegraf  | 2026-04-24T08:08:33Z I! Available plugins: 234 inputs, 9 aggregators, 32 processors, 26 parsers, 60 outputs, 6 secret-stores
+iosxe-telegraf  | 2026-04-24T08:08:33Z I! Loaded inputs: cisco_telemetry_mdt
+iosxe-telegraf  | 2026-04-24T08:08:33Z I! Loaded aggregators: 
+iosxe-telegraf  | 2026-04-24T08:08:33Z I! Loaded processors: 
+iosxe-telegraf  | 2026-04-24T08:08:33Z I! Loaded secretstores: 
+iosxe-telegraf  | 2026-04-24T08:08:33Z I! Loaded outputs: influxdb_v2
+iosxe-telegraf  | 2026-04-24T08:08:33Z I! Tags enabled: 
+iosxe-telegraf  | 2026-04-24T08:08:33Z I! [agent] Config: Interval:10s, Quiet:false, Hostname:"", Flush Interval:10s
+iosxe-telegraf  | 2026-04-24T10:26:23Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-24T12:06:24Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-24T13:31:26Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-24T15:11:29Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-24T15:18:24Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-24T15:18:24Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-24T15:18:24Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-24T15:18:24Z I! [agent] Hang on, flushing any cached metrics before shutdown
+iosxe-telegraf  | 2026-04-24T15:18:24Z I! [agent] Stopping running outputs
+iosxe-telegraf  | 2026-04-24T15:18:26Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:18:26Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:18:27Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:18:27Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:18:28Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:18:28Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:18:29Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:18:29Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:18:30Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:18:30Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:18:32Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:18:32Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:18:36Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:18:36Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:18:43Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:18:43Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:18:57Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:18:57Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:19:23Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:19:23Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:20:15Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:20:15Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:21:15Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:21:15Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:22:16Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:22:16Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:23:16Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:23:16Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:24:17Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:24:17Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:25:17Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:25:17Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:26:18Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:26:18Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:27:19Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:27:19Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:28:19Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:28:19Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:29:20Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:29:20Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:30:20Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:30:20Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:31:21Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:31:21Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:32:22Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:32:22Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:33:22Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:33:22Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:34:23Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:34:23Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:35:23Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:35:23Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:36:24Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:36:24Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:37:24Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:37:24Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:38:25Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:38:25Z E! error loading config file /etc/telegraf/telegraf.conf: error parsing cisco_telemetry_mdt, could not load private key "/etc/telegraf/certs/telegraf-key.pem": open /etc/telegraf/certs/telegraf-key.pem: permission denied
+iosxe-telegraf  | 2026-04-24T15:39:26Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:39:26Z I! Starting Telegraf 1.31.3 brought to you by InfluxData the makers of InfluxDB
+iosxe-telegraf  | 2026-04-24T15:39:26Z I! Available plugins: 234 inputs, 9 aggregators, 32 processors, 26 parsers, 60 outputs, 6 secret-stores
+iosxe-telegraf  | 2026-04-24T15:39:26Z I! Loaded inputs: cisco_telemetry_mdt
+iosxe-telegraf  | 2026-04-24T15:39:26Z I! Loaded aggregators: 
+iosxe-telegraf  | 2026-04-24T15:39:26Z I! Loaded processors: 
+iosxe-telegraf  | 2026-04-24T15:39:26Z I! Loaded secretstores: 
+iosxe-telegraf  | 2026-04-24T15:39:26Z I! Loaded outputs: influxdb_v2
+iosxe-telegraf  | 2026-04-24T15:39:26Z I! Tags enabled: 
+iosxe-telegraf  | 2026-04-24T15:39:26Z I! [agent] Config: Interval:10s, Quiet:false, Hostname:"", Flush Interval:10s
+iosxe-telegraf  | 2026-04-24T15:40:17Z I! [agent] Hang on, flushing any cached metrics before shutdown
+iosxe-telegraf  | 2026-04-24T15:40:17Z I! [agent] Stopping running outputs
+iosxe-telegraf  | 2026-04-24T15:40:17Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-24T15:40:17Z I! Starting Telegraf 1.31.3 brought to you by InfluxData the makers of InfluxDB
+iosxe-telegraf  | 2026-04-24T15:40:17Z I! Available plugins: 234 inputs, 9 aggregators, 32 processors, 26 parsers, 60 outputs, 6 secret-stores
+iosxe-telegraf  | 2026-04-24T15:40:17Z I! Loaded inputs: cisco_telemetry_mdt
+iosxe-telegraf  | 2026-04-24T15:40:17Z I! Loaded aggregators: 
+iosxe-telegraf  | 2026-04-24T15:40:17Z I! Loaded processors: 
+iosxe-telegraf  | 2026-04-24T15:40:17Z I! Loaded secretstores: 
+iosxe-telegraf  | 2026-04-24T15:40:17Z I! Loaded outputs: influxdb_v2
+iosxe-telegraf  | 2026-04-24T15:40:17Z I! Tags enabled: 
+iosxe-telegraf  | 2026-04-24T15:40:17Z I! [agent] Config: Interval:10s, Quiet:false, Hostname:"", Flush Interval:10s

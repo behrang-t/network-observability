@@ -1,0 +1,89 @@
+
+Cat9000v#show telemetry receiver name RCVR-TELEGRAF-GRPC
+  Name: RCVR-TELEGRAF-GRPC
+  Profile: TLS-SERVER-AUTH
+  State: Valid
+  State Description: 
+  Last State Change: 04/24/26 15:48:32
+  Type: protocol
+  Protocol: grpc-tls
+  Host: 192.168.2.220
+  Port: 57000
+
+
+Cat9000v#show telemetry ietf subscription 101 detail
+Telemetry subscription detail:
+
+  Subscription ID: 101
+  Type: Configured
+  State: Valid
+  Stream: yang-push
+  Filter:
+    Filter type: xpath
+    XPath: /process-cpu-ios-xe-oper:cpu-usage/cpu-utilization/one-minute
+  Update policy:
+    Update Trigger: periodic
+    Period: 3000
+  Encoding: encode-kvgpb
+  Source VRF: 
+  Source Address: 
+  Receiver Type: protocol
+  Notes: Subscription validated
+
+  Named Receivers:
+    Name                                              Last State Change  State                 Explanation                                                   
+    -------------------------------------------------------------------------------------------------------------------------------------------------------
+    RCVR-TELEGRAF-GRPC                                04/24/26 15:48:33  Connected                                                                           
+
+
+Cat9000v#show telemetry ietf subscription 102 detail
+Telemetry subscription detail:
+
+  Subscription ID: 102
+  Type: Configured
+  State: Valid
+  Stream: yang-push
+  Filter:
+    Filter type: xpath
+    XPath: /interfaces-ios-xe-oper:interfaces/interface
+  Update policy:
+    Update Trigger: on-change
+    Synch on start: Yes
+    Dampening period: 0
+  Encoding: encode-kvgpb
+  Source VRF: 
+  Source Address: 
+  Receiver Type: protocol
+  Notes: Subscription validated
+
+  Named Receivers:
+    Name                                              Last State Change  State                 Explanation                                                   
+    -------------------------------------------------------------------------------------------------------------------------------------------------------
+    RCVR-TELEGRAF-GRPC                                04/24/26 15:48:33  Connected                                                                           
+
+
+Cat9000v#show telemetry ietf subscription 101 receiver
+Telemetry subscription receivers detail:
+
+  Subscription ID: 101
+  Name: RCVR-TELEGRAF-GRPC
+  Connection: 4
+  State: Connected
+  Explanation: 
+  Last Error: Transport lost
+  Target State: Connected
+
+
+Cat9000v#show telemetry ietf subscription 102 receiver
+Telemetry subscription receivers detail:
+
+  Subscription ID: 102
+  Name: RCVR-TELEGRAF-GRPC
+  Connection: 4
+  State: Connected
+  Explanation: 
+  Last Error: Transport lost
+  Target State: Connected
+
+
+Cat9000v#

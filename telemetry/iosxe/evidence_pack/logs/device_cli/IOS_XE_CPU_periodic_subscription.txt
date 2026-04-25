@@ -1,0 +1,144 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 Cat9000v#show platform software yang-management process\
+confd            : Running    \
+nesd             : Running    \
+syncfd           : Running    \
+ncsshd           : Running    \
+dmiauthd         : Running    \
+nginx            : Running    \
+ndbmand          : Running    \
+pubd             : Running    \
+gnmib            : Not Running\
+\
+Cat9000v#show telemetry receiver all\
+  Telemetry receivers\
+\
+  Name                              Type        Profile               State       Explanation                                                   \
+  --------------------------------------------------------------------------------------------------------------------------------------------\
+  RCVR-TELEGRAF-GRPC                protocol                          Valid                                                                     \
+\
+Cat9000v#show telemetry receiver name RCVR-TELEGRAF-GRPC\
+  Name: RCVR-TELEGRAF-GRPC\
+  Profile: \
+  State: Valid\
+  State Description: \
+  Last State Change: 04/22/26 17:41:50\
+  Type: protocol\
+  Protocol: grpc-tcp\
+  Host: 192.168.2.220\
+  Port: 57000\
+\
+\
+Cat9000v#show telemetry ietf subscription 101 detail\
+Telemetry subscription detail:\
+\
+  Subscription ID: 101\
+  Type: Configured\
+  State: Valid\
+  Stream: yang-push\
+  Filter:\
+    Filter type: xpath\
+    XPath: /process-cpu-ios-xe-oper:cpu-usage/cpu-utilization/one-minute\
+  Update policy:\
+    Update Trigger: periodic\
+    Period: 3000\
+  Encoding: encode-kvgpb\
+  Source VRF: \
+  Source Address: \
+  Receiver Type: protocol\
+  Notes: Subscription validated\
+\
+  Named Receivers:\
+    Name                                              Last State Change  State                 Explanation                                                   \
+    -------------------------------------------------------------------------------------------------------------------------------------------------------\
+    RCVR-TELEGRAF-GRPC                                04/22/26 17:51:23  Connected                                                                           \
+\
+\
+Cat9000v#show telemetry ietf subscription 101 receiver\
+Telemetry subscription receivers detail:\
+\
+  Subscription ID: 101\
+  Name: RCVR-TELEGRAF-GRPC\
+  Connection: 0\
+  State: Connected\
+  Explanation: \
+  Last Error: \
+  Target State: Connected\
+\
+\
+Cat9000v#\
+\
+\
+\
+\
+\
+\
+CSR1000#show telemetry ietf subscription 101 detail \
+Telemetry subscription detail:\
+\
+  Subscription ID: 101\
+  Type: Configured\
+  State: Valid\
+  Stream: yang-push\
+  Filter:\
+    Filter type: xpath\
+    XPath: /process-cpu-ios-xe-oper:cpu-usage/cpu-utilization/five-seconds\
+  Update policy:\
+    Update Trigger: periodic\
+    Period: 1000\
+  Encoding: encode-kvgpb\
+  Source VRF: \
+  Source Address: \
+  Notes: \
+\
+  Receivers:\
+    Address                                    Port     Protocol         Protocol Profile      \
+    -----------------------------------------------------------------------------------------\
+    192.168.2.220                              57000    grpc-tcp                               \
+\
+\
+CSR1000#show telemetry ietf subscription 101 receiver \
+Telemetry subscription receivers detail:\
+\
+  Subscription ID: 101\
+  Address: 192.168.2.220\
+  Port: 57000\
+  Protocol: grpc-tcp\
+  Profile: \
+  Connection: 0\
+  State: Connected\
+  Explanation: \
+\
+\
+CSR1000#show telemetry ietf subscription 101          \
+  Telemetry subscription brief\
+\
+  ID               Type        State       Filter type      \
+  --------------------------------------------------------\
+  101              Configured  Valid       xpath            \
+\
+CSR1000#sh pa\
+CSR1000#sh pla\
+CSR1000#sh platform sof\
+CSR1000#sh platform software ya\
+CSR1000#sh platform software yang-management pro\
+CSR1000#sh platform software yang-management process \
+confd            : Running    \
+nesd             : Running    \
+syncfd           : Running    \
+ncsshd           : Running    \
+dmiauthd         : Running    \
+nginx            : Running    \
+ndbmand          : Running    \
+pubd             : Running    \
+\
+CSR1000#\
+\
+\
+}

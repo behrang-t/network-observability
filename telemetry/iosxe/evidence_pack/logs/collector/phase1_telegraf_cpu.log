@@ -1,0 +1,10 @@
+iosxe-telegraf  | 2026-04-22T16:50:44Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-22T16:50:44Z I! Starting Telegraf 1.31.3 brought to you by InfluxData the makers of InfluxDB
+iosxe-telegraf  | 2026-04-22T16:50:44Z I! Available plugins: 234 inputs, 9 aggregators, 32 processors, 26 parsers, 60 outputs, 6 secret-stores
+iosxe-telegraf  | 2026-04-22T16:50:44Z I! Loaded inputs: cisco_telemetry_mdt
+iosxe-telegraf  | 2026-04-22T16:50:44Z I! Loaded aggregators: 
+iosxe-telegraf  | 2026-04-22T16:50:44Z I! Loaded processors: 
+iosxe-telegraf  | 2026-04-22T16:50:44Z I! Loaded secretstores: 
+iosxe-telegraf  | 2026-04-22T16:50:44Z I! Loaded outputs: influxdb_v2
+iosxe-telegraf  | 2026-04-22T16:50:44Z I! Tags enabled: 
+iosxe-telegraf  | 2026-04-22T16:50:44Z I! [agent] Config: Interval:10s, Quiet:false, Hostname:"", Flush Interval:10s

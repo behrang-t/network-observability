@@ -1,0 +1,8 @@
+iosxe-mailpit  | time="2026/04/23 07:34:30" level=info msg="[smtpd] starting on [::]:1025 (no encryption)"
+iosxe-mailpit  | time="2026/04/23 07:34:30" level=info msg="[cors] allowed API origins: "
+iosxe-mailpit  | time="2026/04/23 07:34:30" level=info msg="[http] starting on [::]:8025"
+iosxe-mailpit  | time="2026/04/23 07:34:30" level=info msg="[http] accessible via http://localhost:8025/"
+iosxe-mailpit  | time="2026/04/24 08:08:32" level=info msg="[smtpd] starting on [::]:1025 (no encryption)"
+iosxe-mailpit  | time="2026/04/24 08:08:32" level=info msg="[cors] allowed API origins: "
+iosxe-mailpit  | time="2026/04/24 08:08:32" level=info msg="[http] starting on [::]:8025"
+iosxe-mailpit  | time="2026/04/24 08:08:32" level=info msg="[http] accessible via http://localhost:8025/"

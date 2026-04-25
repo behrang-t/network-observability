@@ -1,0 +1,86 @@
+
+CSR1000#show telemetry ietf subscription 101 detail
+Telemetry subscription detail:
+
+  Subscription ID: 101
+  Type: Configured
+  State: Valid
+  Stream: yang-push
+  Filter:
+    Filter type: xpath
+    XPath: /process-cpu-ios-xe-oper:cpu-usage/cpu-utilization/one-minute
+  Update policy:
+    Update Trigger: periodic
+    Period: 3000
+  Encoding: encode-kvgpb
+  Source VRF: 
+  Source Address: 
+  Notes: 
+
+  Receivers:
+    Address                                    Port     Protocol         Protocol Profile      
+    -----------------------------------------------------------------------------------------
+    192.168.2.220                              57000    grpc-tls         TLS-SERVER-AUTH       
+
+
+CSR1000#show telemetry ietf subscription 101 receiver
+Telemetry subscription receivers detail:
+
+  Subscription ID: 101
+  Address: 192.168.2.220
+  Port: 57000
+  Protocol: grpc-tls
+  Profile: TLS-SERVER-AUTH
+  Connection: 65535
+  State: Connecting
+  Explanation: 
+
+
+CSR1000#show crypto pki trustpoints MDT-CA status
+Trustpoint MDT-CA:
+  Issuing CA certificate configured:
+    Subject Name:
+     cn=Telemetry-Lab-CA,ou=Telemetry,o=Lab,c=DE
+    Fingerprint MD5: 4B42B828 758E9359 043555E4 96D23EDC 
+    Fingerprint SHA1: AB3B806E DD5F837F E79C0AA6 15786EA0 8F7315B2 
+  State:
+    Keys generated ............. Yes (General Purpose, non-exportable)
+    Issuing CA authenticated ....... Yes
+    Certificate request(s) ..... None
+
+
+CSR1000#show crypto pki certificates MDT-CA
+CA Certificate
+  Status: Available
+  Certificate Serial Number (hex): 0321A45C06930ABAA4989EE5B44D684167410CF4
+  Certificate Usage: General Purpose
+  Issuer: 
+    cn=Telemetry-Lab-CA
+    ou=Telemetry
+    o=Lab
+    c=DE
+  Subject: 
+    cn=Telemetry-Lab-CA
+    ou=Telemetry
+    o=Lab
+    c=DE
+  Validity Date: 
+    start date: 15:06:31 UTC Apr 24 2026
+    end   date: 15:06:31 UTC Apr 21 2036
+  Associated Trustpoints: MDT-CA 
+  Storage: nvram:Telemetry-La#CF4CA.cer
+
+
+CSR1000#show logging | include PKI|grpc|telemetry|SSL|TLS
+    TLS Profiles: 
+*Apr 25 12:52:54.585: %PKI-6-TRUSTPOINT_CREATE: Trustpoint: SLA-TrustPoint created succesfully
+*Apr 25 12:52:54.588: %PKI-6-TRUSTPOINT_CREATE: Trustpoint: TP-self-signed-734914184 created succesfully
+*Apr 25 12:52:54.591: %PKI-6-TRUSTPOINT_CREATE: Trustpoint: MDT-CA created succesfully
+*Apr 25 12:53:05.530: %PKI-2-NON_AUTHORITATIVE_CLOCK: PKI functions can not be initialized until an authoritative time source, like NTP, can be obtained.
+CSR1000#sh clo
+CSR1000#sh clock de
+CSR1000#sh clock detail 
+*13:20:27.413 UTC Sat Apr 25 2026
+No time source
+CSR1000#
+

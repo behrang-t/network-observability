@@ -1,0 +1,30 @@
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Starting Telegraf 1.31.3 brought to you by InfluxData the makers of InfluxDB
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Available plugins: 234 inputs, 9 aggregators, 32 processors, 26 parsers, 60 outputs, 6 secret-stores
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Loaded inputs: cisco_telemetry_mdt
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Loaded aggregators: 
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Loaded processors: 
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Loaded secretstores: 
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Loaded outputs: influxdb_v2
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Tags enabled: 
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! [agent] Config: Interval:10s, Quiet:false, Hostname:"", Flush Interval:10s
+iosxe-telegraf  | 2026-04-23T08:38:09Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-23T09:08:09Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-23T10:17:05Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-23T11:47:07Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-23T12:57:08Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Loading config: /etc/telegraf/telegraf.conf
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Starting Telegraf 1.31.3 brought to you by InfluxData the makers of InfluxDB
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Available plugins: 234 inputs, 9 aggregators, 32 processors, 26 parsers, 60 outputs, 6 secret-stores
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Loaded inputs: cisco_telemetry_mdt
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Loaded aggregators: 
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Loaded processors: 
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Loaded secretstores: 
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Loaded outputs: influxdb_v2
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! Tags enabled: 
+iosxe-telegraf  | 2026-04-23T07:34:36Z I! [agent] Config: Interval:10s, Quiet:false, Hostname:"", Flush Interval:10s
+iosxe-telegraf  | 2026-04-23T08:38:09Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-23T09:08:09Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-23T10:17:05Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-23T11:47:07Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled
+iosxe-telegraf  | 2026-04-23T12:57:08Z E! [inputs.cisco_telemetry_mdt] Error in plugin: GRPC dialout receive error: rpc error: code = Canceled desc = context canceled

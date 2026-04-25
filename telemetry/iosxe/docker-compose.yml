@@ -1,0 +1,63 @@
+
+services:
+  telegraf:
+    image: telegraf:1.31
+    container_name: iosxe-telegraf
+    network_mode: host
+    restart: unless-stopped
+    volumes:
+      - ./collector/telegraf/telegraf.conf:/etc/telegraf/telegraf.conf:ro
+      - ./collector/telegraf/certs:/etc/telegraf/certs:ro
+      - ./evidence_pack/logs:/var/log/telemetry-evidence
+    depends_on:
+      - influxdb
+
+  influxdb:
+    image: influxdb:2.7
+    container_name: iosxe-influxdb
+    restart: unless-stopped
+    ports:
+      - "8086:8086"
+    environment:
+      - DOCKER_INFLUXDB_INIT_MODE=setup
+      - DOCKER_INFLUXDB_INIT_USERNAME=admin
+      - DOCKER_INFLUXDB_INIT_PASSWORD=adminadmin
+      - DOCKER_INFLUXDB_INIT_ORG=lab
+      - DOCKER_INFLUXDB_INIT_BUCKET=iosxe_telemetry
+      - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=telemetry-dev-token
+    volumes:
+      - influxdb2-data:/var/lib/influxdb2
+      - ./collector/influxdb/init:/docker-entrypoint-initdb.d
+
+  grafana:
+    image: grafana/grafana:11.1.0
+    container_name: iosxe-grafana
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=adminadmin
+      - GF_SMTP_ENABLED=true
+      - GF_SMTP_HOST=mailpit:1025
+      - GF_SMTP_FROM_ADDRESS=telemetry@lab.local
+      - GF_SMTP_FROM_NAME=IOSXE Telemetry
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./collector/grafana/provisioning:/etc/grafana/provisioning
+      - ./collector/grafana/dashboards:/var/lib/grafana/dashboards
+    depends_on:
+      - influxdb
+      - mailpit
+
+  mailpit:
+    image: axllent/mailpit:latest
+    container_name: iosxe-mailpit
+    restart: unless-stopped
+    ports:
+      - "8025:8025"
+      - "1025:1025"
+
+volumes:
+  influxdb2-data:
+  grafana-data:
