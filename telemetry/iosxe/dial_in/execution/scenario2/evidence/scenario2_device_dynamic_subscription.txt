@@ -1,0 +1,29 @@
+
+Cat9000v#show telemetry ietf subscription dynamic brief
+ID         Type       State      State Description
+2147483649 Dynamic    Valid      Subscription validated                                      
+
+Cat9000v#sh telemetry ietf subscription 2147483649 det    
+Cat9000v#sh telemetry ietf subscription 2147483649 detail 
+Telemetry subscription detail:
+
+  Subscription ID: 2147483649
+  Type: Dynamic
+  State: Valid
+  Stream: yang-push
+  Filter:
+    Filter type: xpath
+    XPath: /interfaces-ios-xe-oper:interfaces/interface
+  Update policy:
+    Update Trigger: periodic
+    Period: 1000
+  Encoding: encode-xml
+  Source VRF: 
+  Source Address: 
+  Notes: Subscription validated
+
+  Named Receivers:
+    Name                                              Last State Change  State                 Explanation                                                   
+    -------------------------------------------------------------------------------------------------------------------------------------------------------
+    netconf://192.168.2.220:42808                     04/29/26 13:37:58  Connected                                                                           
+
