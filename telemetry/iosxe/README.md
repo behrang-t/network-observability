@@ -87,6 +87,38 @@ The final scope includes:
 
 ---
 
+### Dial-in / dynamic telemetry validation
+
+The main project pipeline is based on configured dial-out telemetry subscriptions because this design fits persistent monitoring, dashboards, alerting, and TLS hardening.
+
+In addition to the persistent dial-out pipeline, a complementary dial-in / dynamic telemetry scenario was also validated.
+
+The dial-in proof-of-concept used:
+
+- Cat9000v
+- NETCONF session
+- XML payload
+- temporary dynamic telemetry subscription
+- interface statistics sensor path
+- NETCONF notification reception
+- session-bound subscription cleanup after teardown
+
+Execution footprint:
+
+- design note: `dial_in/design_note.md`
+- implementation: `dial_in/execution/scenario2/`
+- payload: `dial_in/execution/scenario2/payloads/interface_stats_dynamic_subscription.xml`
+- evidence: `dial_in/execution/scenario2/evidence/`
+
+This dial-in work was kept separate from the main production-style dial-out pipeline because its purpose was short-lived troubleshooting and validation, not persistent monitoring.
+
+The result is that the project demonstrates both patterns:
+
+- configured dial-out telemetry for persistent monitoring
+- dial-in / dynamic telemetry for temporary validation and troubleshooting
+
+---
+
 ## Phase summary
 
 ### Phase 1 — Baseline telemetry pipeline
@@ -250,6 +282,7 @@ This project established a **working IOS XE model-driven telemetry pipeline** us
 - Grafana for visualization and alerting
 - Mailpit for test email delivery
 - TLS hardening for the validated primary platform path
+- a complementary NETCONF-based dial-in telemetry validation footprint
 
 The pipeline is evidence-backed across baseline telemetry, alerting, and hardening.  
 Cat9000v completed the full validation path, while CSR1000v TLS behavior was reduced to a clearly documented lab prerequisite issue rather than an unresolved ambiguity.
