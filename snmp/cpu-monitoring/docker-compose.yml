@@ -14,7 +14,7 @@ services:
 
   poller:
     build:
-      context: ./snmpcheck
+      context: ./poller
       dockerfile: Dockerfile
     image: snmp-poller:0.1
     network_mode: host
@@ -34,7 +34,7 @@ services:
 
   alerter:
     build:
-      context: ./alerting
+      context: ./alerter
       dockerfile: Dockerfile
     image: snmp-alerter:0.1
     volumes:

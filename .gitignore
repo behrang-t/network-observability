@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local SNMP bootstrap credentials
+snmp/cpu-monitoring/bootstrap/vault.json
+
+# Runtime-generated TLS material
+telemetry/iosxe/collector/telegraf/certs/*
+!telemetry/iosxe/collector/telegraf/certs/.gitkeep
+!telemetry/iosxe/collector/telegraf/certs/telegraf_server.cnf

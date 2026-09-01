@@ -1,10 +1,10 @@
 # IOS XE Telemetry Pipeline
 
 ## Project position in the repository
-- **Baseline project:** `07_snmp_cpu_monitoring_pipeline`
-- **Next-generation project:** `08_iosxe_telemetry_pipeline`
+- **SNMP baseline:** `snmp/cpu-monitoring/`
+- **Model-driven telemetry:** `telemetry/iosxe/`
 
-This project is the next-generation, model-driven monitoring workflow that follows the earlier SNMP-based baseline monitoring workflow.
+This project is the model-driven monitoring workflow that complements the SNMP-based baseline monitoring workflow in this repository.
 
 ---
 
@@ -177,7 +177,7 @@ Documented limitation:
 
 ## Directory layout
 ```text
-08_iosxe_telemetry_pipeline/
+telemetry/iosxe/
 ├── collector/
 │   ├── telegraf/
 │   │   ├── telegraf.conf
@@ -213,7 +213,7 @@ The project was closed only after evidence was collected for:
 
 ### Evidence directory
 ```text
-examples/06_netauto_ecosystem/08_iosxe_telemetry_pipeline/evidence_pack/
+telemetry/iosxe/evidence_pack/
 ```
 
 ### Typical evidence captured

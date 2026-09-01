@@ -9,7 +9,7 @@ The primary telemetry pipeline in this repository was intentionally implemented 
 - evidence-backed validation
 - stable day-2 observability
 
-That baseline is already complete in `08_iosxe_telemetry_pipeline/`.
+That baseline is already complete in the primary `telemetry/iosxe/` workflow.
 
 This note captures the complementary role of **dial-in / dynamic telemetry subscriptions**. The purpose here is not to replace the configured dial-out design, but to identify where temporary, session-bound subscriptions remain operationally useful.
 
